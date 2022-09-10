@@ -15,3 +15,29 @@
 #with the characters 'a' ... 'z' changed to uppercase
 #
 
+
+def reverseStr(inputStr):
+    x = len(inputStr) - 1
+    s = ""
+    while x >= 0:
+        s += inputStr[x]
+        x-=1
+    return s
+
+
+def containsWord(containingStr, containedStr):
+    if containedStr in containingStr:
+        return "Yes"
+    else:
+        return "No"
+    
+def isPalindrome(inputStr):
+    s = reverseStr(inputStr)
+    
+    if s == inputStr:
+        return "Yes"
+    else:
+        return "No"    
+
+def upperCaseStr(inputStr):
+    return inputStr.upper()
